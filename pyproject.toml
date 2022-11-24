@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "dataviz-tutorial"
+version = "0.1.0"
+description = "Example for Brainhack 2022 data visualization tutorial"
+authors = ["Tristan Kuehn <tkuehn@uwo.ca>"]
+readme = "README.md"
+packages = [{include = "dataviz_tutorial"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+matplotlib = "^3.6.2"
+nibabel = "^4.0.2"
+numpy = "^1.23.5"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+pylint = "^2.15.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

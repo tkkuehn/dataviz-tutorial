@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -49,7 +51,7 @@ def remove_box(ax, x_bounds=None, y_bounds=None):
 def main():
     my_data = generate_data(2)
     width = 2.63
-    plt.style.use("example.mplstyle")
+    plt.style.use(Path(__file__).parent / "stylesheets" / "example.mplstyle")
     fig, axes = plt.subplots(
         2,
         1,
